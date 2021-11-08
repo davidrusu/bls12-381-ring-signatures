@@ -1,9 +1,10 @@
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    python38
-    python38Packages.poetry
-    python38Packages.jupyter
+    python39
+    python39Packages.pip
+    python39Packages.poetry
+    python39Packages.jupyter
     gmp
   ];
 }
